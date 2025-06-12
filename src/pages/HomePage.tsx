@@ -6,6 +6,7 @@ import {
   Shuffle, 
   Type, 
   Key, 
+  Phone,
   Shield, 
   ArrowRight,
   CheckCircle
@@ -27,6 +28,16 @@ const HomePage: React.FC = () => {
       features: ['Bulk extraction', 'Domain filtering', 'Export to Excel/TXT']
     },
     {
+      id: 'phone-validator',
+      title: 'Phone Validator',
+      description: 'Validate and verify phone numbers with advanced checking and carrier detection.',
+      icon: Phone,
+      color: 'from-green-500 to-green-600',
+      hoverColor: 'hover:from-green-600 hover:to-green-700',
+      path: '/phone-validator',
+      features: ['Number validation', 'Carrier detection', 'Country identification']
+    },
+    {
       id: 'duplicate-remover',
       title: 'Duplicate Remover',
       description: 'Remove duplicate lines and organize your data with intelligent sorting algorithms.',
@@ -41,8 +52,8 @@ const HomePage: React.FC = () => {
       title: 'User Agent Mixer',
       description: 'Mix and randomize user agents from different devices for testing purposes.',
       icon: Shuffle,
-      color: 'from-green-500 to-green-600',
-      hoverColor: 'hover:from-green-600 hover:to-green-700',
+      color: 'from-emerald-500 to-emerald-600',
+      hoverColor: 'hover:from-emerald-600 hover:to-emerald-700',
       path: '/user-agent-mixer',
       features: ['Device categorization', 'Random mixing', 'Bulk import/export']
     },

@@ -8,6 +8,7 @@ import DuplicateRemover from './pages/DuplicateRemover';
 import UserAgentMixer from './pages/UserAgentMixer';
 import TextFormatter from './pages/TextFormatter';
 import PasswordGenerator from './pages/PasswordGenerator';
+import PhoneValidator from './pages/PhoneValidator';
 import AdminPanel from './pages/AdminPanel';
 import { applySecurityMeasures } from './utils/security';
 
@@ -44,6 +45,10 @@ function App() {
         <Route 
           path="/password-generator" 
           element={isAuthenticated ? <PasswordGenerator /> : <LoginPage />} 
+        />
+        <Route 
+          path="/phone-validator" 
+          element={isAuthenticated ? <PhoneValidator /> : <LoginPage />} 
         />
         <Route 
           path="/admin/billa" 
