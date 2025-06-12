@@ -1,0 +1,7 @@
+body {
+  font-family: "Noto Sans Bengali", "Inter", Arial, sans-serif;
+  background: #f9f9f9;
+}
+/* Optionally keep margin/padding for body if needed */
+
+/* Remove nav, button, textarea, .btn-group, #outputBox, and media queries as Bootstrap now handles these */
